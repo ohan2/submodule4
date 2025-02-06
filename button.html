@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Sum</title>
+</head>
+<body>
+    <button onclick="calculateSum()">Calculate Sum</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateSum() {
+            let count = 0;
+            for(let tally = 1; tally <= 100; tally++) {
+                count += tally;
+            }
+            console.log("Total sume: ", count);
+
+            //displays the sum on the webpage
+            document.getElementById("result").textContent="Total Sum:" + count;
+        }
+
+    </script>
+</body>
+</html>
